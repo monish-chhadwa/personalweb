@@ -1,0 +1,160 @@
+button{
+    border: none;/*Reset*/
+}
+html,body,aside{
+    height: 100%;
+    /*font:14px Arial; */
+}
+body{
+    /*box-sizing: border-box;*/
+    font: 20pt "Myriad Pro";
+}
+body>header{
+    background-color:#4e4e4e;
+    padding: 15px 15px 13px;
+    height: 50px;
+    box-sizing: border-box;
+    color: #ededed;
+}
+
+body>main{
+    background-color: #d6dddf;
+    padding-top: 30px;
+    height: 100%;
+    overflow: auto;
+}
+body>main::-webkit-scrollbar{
+    display: none;
+}
+aside{
+    background-color: #ffffff;
+    padding: 15px;
+    margin-right: 50px;
+    width: 200px;
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+}
+aside button{
+    background-color: #006bbd;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-family: "Myriad Pro";
+    text-align: center;
+}
+#mainSection{
+    margin-right: 250px;
+    overflow: hidden;
+}
+article{
+    background-color: #ffffff;
+    padding: 15px 15px 18px 15px;
+    margin-bottom: 30px;
+}
+article header{
+    /*border: 1px black;Not working*/
+    font-weight: bold;
+}
+.right{
+    display: block;
+    float: right;
+}
+article main{
+    padding-bottom: 40px;
+}
+article main ul{
+    font-size: 16pt;
+    line-height: 170%;
+    float: left;
+}
+article main ul.right,footer .right{
+    opacity: 0.8;
+    font-size: 18pt;
+}
+article footer{
+    overflow: hidden;
+    font-weight: bold;
+    /*font-size: 20pt;*/
+}
+article footer .right{
+    font-size: 18pt;
+}
+article footer div{
+    text-align: center;
+    overflow: hidden;
+    color: green;
+    font-size: 14pt;
+    /*width: 100%;*/
+}
+article footer button{
+    background-color: #006bbd;
+    padding: 2px 20px;
+    border: none;
+    color: white;
+    font-size: 14pt;
+}
+article footer span{
+    display: block;
+    float: left;
+}
+
+/*Modal styling here onwards*/
+.overlay{
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height:100%;
+    z-index: 1000;
+    background-color: rgba(76,76,76,0.8);/*For transparent background*/
+    /*opacity: 0.5;*/
+}
+
+.overlay>div{
+    background-color: white;
+    width:60%;
+    margin: 200px auto;
+    /*border:1px solid #000;*/
+}
+.overlay header{
+    padding: 17px;
+    border-bottom: 1px solid black;
+}
+.overlay header span:hover{
+    cursor: pointer;
+}
+.overlay main{
+    padding: 25px 20px;
+
+}
+.overlay main input,.overlay main button,.overlay main select{
+    font-size: 20px;
+}
+.overlay main input[type='text'],.overlay main select{
+    padding: 7px 0px 7px 12px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+.overlay main button{
+    background-color: #006bbd;
+    padding: 5px;
+    width: 15%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.overlay main a{
+    background-color: #006bbd;
+    padding: 7px;
+    width: 35px;
+    color: white;
+    text-decoration: none;
+}
+.overlay main div{
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+#googleMap{
+width: 50%;
+height: 750px;
+float: left;
+}
+#insta{
+    width: 50%;
+    height: 750px;
+    padding: 5px;
+    float: left;
+    box-sizing: border-box;
+    font-size: xx-large;
+}
+.next{
+    clear: both;
+    text-align: center;
+}

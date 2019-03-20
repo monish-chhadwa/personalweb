@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>22nd July 2015</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="mainStyle.css"/>
+</head>
+<body>
+	<div id="header_nav"><h1 class="titleText">Welcome to Iceland</h1></div>
+	<div class="content"></div>
+</body>
+<script type="text/javascript">
+$(function(){
+    $('#header_nav').data('size','big');
+});
+
+$(window).scroll(function(){
+    if($(document).scrollTop() > 0)
+    {
+        if($('#header_nav').data('size') == 'big')
+        {
+            $('#header_nav').data('size','small');
+            $('#header_nav').stop().animate({
+                height:'40px'
+            },600);
+        }
+    }
+    else
+    {
+        if($('#header_nav').data('size') == 'small')
+        {
+            $('#header_nav').data('size','big');
+            $('#header_nav').stop().animate({
+                height:'150px'
+            },600);
+        }  
+    }
+});
+</script>
+</html>

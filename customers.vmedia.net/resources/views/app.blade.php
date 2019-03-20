@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media.net</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-weight: 100;
+            /*font-family: 'Lato';*/
+        }
+        aside{
+            height: 100%;
+            width: 275px;
+            float: left;
+            background-color: #204d74;
+            color: white;
+        }
+        aside header{
+            padding: 10px;
+        }
+        aside ul{
+            padding-left: 20px;
+            list-style-type: none;
+            font-size: 20px;
+        }
+        /*Start:To nullify user-agent stylesheet*/
+        aside ul a{
+            text-decoration: none;
+            color: white;
+        }
+        aside ul a:hover{
+            text-decoration: none;
+            color: white;
+        }
+        /*End:To nullify user-agent stylesheet*/
+        aside ul li{
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        aside ul li:hover:not(.noHover){
+            background-color: orangered;
+            cursor: pointer;
+        }
+
+        aside ul.sublist{
+            padding-left: 30px;
+        }
+        body>header{
+            background-color: orangered;
+            overflow: auto;
+        }
+        header button{
+            float: right;
+        }
+        main{
+            width: 80%;
+            float: left;
+            padding: 10px 20px;
+        }
+    </style>
+    @yield('styling')
+</head>
+
+<body>
+    <aside>
+        <header>
+            <img src="/images/logo-mediaNet.png">
+        </header>
+        <ul>
+            <li class="noHover">AdTags:</li>
+            <ul class="sublist">
+                <a href="/customers/create"><li>--> Create</li></a>
+                <a href="/customers"><li>--> View</li></a>
+            </ul>
+            <li class="noHover">Reports: </li>
+        </ul>
+        <ul class="sublist">
+            <li>--> Overall</li>
+            <li>--> AdTag</li>
+        </ul>
+    </aside>
+    <header>
+        <a href="/auth/logout"><button type="button" class="btn btn-info">Logout</button></a>
+    </header>
+    <main>
+        @yield('content')
+    </main>
+</body>
+</html>

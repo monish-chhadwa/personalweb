@@ -1,0 +1,37 @@
+<?php $__env->startSection('styling'); ?>
+<link rel="stylesheet" href="/stylesheets/index.css">
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+    <header><a href="/"><img src="/images/logo-mediaNet.png"></a></header>
+    <main>
+        <div class="container">
+            <div class="left">
+                <header>SIGN IN</header>
+                <form method="POST"
+                      action="/auth/login">
+                    <?php echo csrf_field(); ?>
+
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Password</label>
+                        <input type="password" class="form-control" id="pass" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="form-control btn btn-success">
+                    </div>
+                </form>
+                <?php echo $__env->make('errors.list', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            </div>
+            <div class="right">
+                <h1>Welcome to admin</h1>
+                <p>This page is confidential<br/>
+                    Please login to continue</p>
+            </div>
+        </div>
+    </main>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,25 @@
+table{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    text-align: center;
+    border-collapse: collapse;
+}
+table,th,td{
+    border: 1px solid black;
+}
+th{
+    font-family: cursive;
+    font-size: 22px;
+    background-color: #167F92;
+    color: white;
+}
+tr{
+    font-size: 20px;
+    color: #024457;
+    padding: 5px 2px;
+}
+tr:nth-child(even){
+    background-color: #9cfcff;
+}

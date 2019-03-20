@@ -1,0 +1,192 @@
+#container1{
+	background-color: #9aa8f0;
+	overflow: auto;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#container2{
+	width: 80%;
+	margin: 0px auto;
+	background-color: white;
+	padding: 10px;
+}
+
+#header{
+	height: 20%;
+}
+
+#imgContainer{
+	float: left;
+	width: 30%;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: #a6fff3;
+}
+
+#imgContainer img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+
+#title{
+	float: left;
+	width: 70%;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+#title h1{
+	color: #ff443a;
+	font-family: cursive;
+}
+
+#title h2{
+	font-weight: lighter;
+	font-style: italic;
+}
+
+#note{
+	clear: both;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: left;
+	font-style: italic;
+	color: #ff27c7;
+}
+
+form{
+	clear: both;
+	padding: 10px;
+	margin-bottom: 0;
+}
+
+::-webkit-input-placeholder {
+	color: #27a9ff;
+	font-weight: 100;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: #27a9ff;
+	font-weight: 100;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: #27a9ff;
+	font-weight: 100;
+}
+
+:-ms-input-placeholder {
+	color: #27a9ff;
+	font-weight: 100;
+}
+
+input[type='text']:not(#captchaInput){
+	padding: 5px 5px 5px 45px;
+	height: 40px;
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
+	background-repeat: no-repeat;
+	background-size: 40px 100%;
+}
+
+textarea{
+	padding: 5px 5px 5px 45px;
+	/*height: 40px; Giving height over-rides the rows attribute*/
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	background-image: url("images/message.png");
+}
+
+input[name='name']{
+	background-image: url("images/name.png");
+}
+input[name='email']{
+	background-image: url("images/email.png");
+}
+input[name='contact']{
+	background-image: url("images/contact.png");
+}
+
+input.invalid{
+	border: 2px solid red;
+}
+input.valid{
+	border: 2px solid green;
+}
+
+form span{
+	color: red;
+	font-weight: bold;
+}
+
+input[type='submit']{
+	color:white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
+	text-align: center;
+	width: 150px;
+	height: 45px;
+	padding: 0px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: #ff443a;
+}
+
+button{
+	float: right;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: cursive;
+	width: 75px;
+	height: 30px;
+	background-color: #58ff5c;
+}
+
+#response{
+	color: #2b27ff;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#captchadiv{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 0px 15px 0px;
+	overflow: auto;
+	text-align: left;
+}
+#captcha{
+	height: 70px;
+	padding:0px 5px;
+	float: right;
+}
+#captchadiv button{
+	float: inherit;
+	background-color: inherit;
+	vertical-align: top;
+}
+#captchadiv input[type='text']{
+	float: left;
+}
+#imageDiv{
+	width: 50%;
+	float: left;
+}
+#textDiv{
+	width: 50%;
+	float: left;
+}

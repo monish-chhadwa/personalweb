@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            counter-reset: rule;
+        }
+        ul{
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            list-style: none;
+            margin: 0px;
+            padding: 5px;
+        }
+        ul>li:before{
+            counter-increment: rule;
+            content: counter(rule) ". ";
+        }
+        ul li{
+            padding: 10px 0px;
+            border-bottom: 1px solid black;
+        }
+        ul li a{
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+        }
+        ul li a:hover{
+            color: pink;
+            font-size: 20px;
+        }
+        #wrapper{
+            overflow: auto;
+        }
+        #wrapper h2{
+            margin-bottom: 0px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h2 class="new">MARKETPLACE</h2>
+        <ul>
+            <li><a>Ad 1</a></li>
+            <li><a>Ad 2</a></li>
+            <li><a>Ad 3</a></li>
+        </ul>
+        <ul>
+            <li><a>Ad 4</a></li>
+            <li><a>Ad 5</a></li>
+            <li><a>Ad 6</a></li>
+        </ul>
+    </div>
+</body>
+</html>

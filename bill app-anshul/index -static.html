@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bill Screen</title>
+    <link rel="stylesheet" type="text/css" href="reset.css"/>
+    <link rel="stylesheet" type="text/css" href="mainStyle.css"/>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header>Split bill</header>
+    <main>
+        <aside>
+            <button onclick="overlay1();">Add Friend</button><br/>
+            <button onclick="overlay();" id="addBill">Add a bill</button>
+        </aside>
+        <section id="mainSection">
+            <article>
+                <header>
+                    New year party!
+                    <span class="right">Amount</span>
+                    <hr>
+                </header>
+                <main>
+                    <ul>
+                        <li>John</li>
+                        <li>John</li>
+                        <li>John</li>
+                        <li>John</li>
+                    </ul>
+                    <ul class="right">
+                        <li>1,103.5</li>
+                        <li>1,103.5</li>
+                        <li>1,103.5</li>
+                        <li>1,103.5</li>
+                    </ul>
+                    <div style="clear: both"></div>
+                </main><hr>
+                <footer>
+                    <span>Total Amount</span>
+
+                    <span class="right">4054.00</span>
+                    <div><button class="payMark">Mark as PAID</button></div>
+                </footer>
+                <!--<div style="clear: both"></div>-->
+            </article>
+            <article>
+                <header>
+                    New year party!
+                    <span class="right">Amount</span>
+                    <hr>
+                </header>
+                <main>
+                    <ul>
+                        <li>John</li>
+                        <li>John</li>
+                        <li>John</li>
+                        <li>John</li>
+                    </ul>
+                    <ul class="right">
+                        <li>1,103.5</li>
+                        <li>1,103.5</li>
+                        <li>1,103.5</li>
+                        <li>1,103.5</li>
+                    </ul>
+                    <div style="clear: both"></div>
+                </main><hr>
+                <footer>
+                    <span>Total Amount</span>
+
+                    <span class="right">4054.00</span>
+                    <div>PAID</div>
+                </footer>
+                <!--<div style="clear: both"></div>-->
+            </article>
+        </section>
+    </main>
+    <div class="overlay" style="visibility: visible">
+        <div>
+            <header>
+                Add bill
+                <span class="right" onclick="overlay()">X</span>
+            </header>
+            <main>
+                    <input type="text" placeholder="Bill title"/>
+                    <!--<input type="text" placeholder="Friend 1"/>-->
+                    <select id="friends"></select><a href="javascript:;" class="addButton">+</a>
+                    <input type="text" placeholder="Amount(1000.0)"/>
+                    <div><button id="saveBill">Save</button></div>
+            </main>
+        </div>
+    </div>
+    <div class="overlay">
+        <div>
+            <header>
+                Add friend
+                <span class="right" onclick="overlay1()">X</span>
+            </header>
+            <main>
+                    <input type="text" placeholder="Friend 1"/>
+                    <a href="javascript:;" class="addButton">+</a>
+                    <div><button id="saveFriend">Save</button></div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

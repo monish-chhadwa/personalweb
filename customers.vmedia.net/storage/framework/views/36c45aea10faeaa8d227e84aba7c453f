@@ -1,0 +1,14 @@
+<?php $__env->startSection('content'); ?>
+    <h1>Details For Customer Id: <?php echo e($customer->cId); ?></h1>
+    <hr/>
+    <table>
+        <tr><td>Name </td><td><?php echo e($customer->cName); ?> </td></tr>
+        <tr><td>Company </td><td><?php echo e($customer->company); ?> </td></tr>
+        <tr><td>Contact </td><td><?php echo e($customer->contact); ?> </td></tr>
+        <tr><td>Email </td><td><?php echo e($customer->email); ?> </td></tr>
+        <tr><td>Type </td><td><?php echo e($customer->type); ?> </td></tr>
+        <tr><td>Created on </td><td><?php echo e($customer->created_at); ?> </td></tr>
+    </table>
+    <a href="/customers/<?php echo e($customer->cId); ?>/edit">Edit Details</a>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

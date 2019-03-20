@@ -1,0 +1,56 @@
+<?php /*
+Automatically created by "Form"
+<input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
+*/ ?>
+
+<div class="form-group">
+    <?php echo Form::label('cName','Name:'); ?>
+
+    <?php echo Form::text('cName',null,['class'=>'form-control']); ?>
+
+    <?php /*<label for="cName">Name:</label>*/ ?>
+    <?php /*<input type="text" class="form-control" id="cName" name="cName" placeholder="">*/ ?>
+</div>
+<div class="form-group">
+    <?php echo Form::label('company','Company:'); ?>
+
+    <?php echo Form::text('company',null,['class'=>'form-control']); ?>
+
+</div>
+<div class="form-group">
+    <?php echo Form::label('contact','Mobile:'); ?>
+
+    <?php echo Form::text('contact',null,['class'=>'form-control']); ?>
+
+</div>
+<div class="form-group">
+    <?php echo Form::label('email','Email:'); ?>
+
+    <?php echo Form::email('email',null,['class'=>'form-control']); ?>
+
+</div>
+<div class="form-group">
+    <?php echo Form::label('password','Password:'); ?>
+
+    <?php echo Form::input('password','password',null,['class'=>'form-control']); ?>
+
+</div>
+<div class="form-group">
+    <?php echo Form::label('password_confirmation','Confirm Password:'); ?>
+
+    <?php echo Form::input('password','password_confirmation',null,['class'=>'form-control']); ?>
+
+</div>
+<div class="form-group">
+    <label for="type">Type:</label>
+    <select class="form-control" id="type" name="type">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+</div>
+<div class="form-group">
+    <?php echo Form::submit($submitButtonText,['class'=>'btn btn-primary form-control']); ?>
+
+</div>
